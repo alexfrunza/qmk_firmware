@@ -53,8 +53,8 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define CTL_D LCTL_T(KC_D)
 
 // Right-hand home row mods
-#define CTL_K RCTL_T(KC_J)
-#define ALT_L LALT_T(KC_K)
+#define CTL_K RCTL_T(KC_K)
+#define ALT_L LALT_T(KC_L)
 #define GUI_SCL RGUI_T(KC_SCLN)
 
 #ifndef POINTING_DEVICE_ENABLE
