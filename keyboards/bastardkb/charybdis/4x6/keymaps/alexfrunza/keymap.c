@@ -58,10 +58,12 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define GUI_SCL RGUI_T(KC_SCLN)
 
 #ifndef POINTING_DEVICE_ENABLE
-#    define DRGSCRL KC_NO
-#    define DPI_MOD KC_NO
-#    define S_D_MOD KC_NO
-#    define SNIPING KC_NO
+#    define DRGSCRL  KC_NO
+#    define DPI_MOD  KC_NO
+#    define DPI_RMOD KC_NO
+#    define S_D_MOD  KC_NO
+#    define S_D_RMOD KC_NO
+#    define SNIPING  KC_NO
 #endif // !POINTING_DEVICE_ENABLE
 
 // clang-format off
@@ -77,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        XXXXXXX,    PT_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, PT_SLSH,  KC_EQL,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   KC_CAPS,  KC_SPC,   RAISE,     RS_ENT, KC_BSPC,
-                                           KC_LSFT, KC_RALT,     KC_RSFT
+                                           KC_RALT, KC_LSFT,     KC_RSFT
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
@@ -100,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
        QK_BOOT,  EE_CLR, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QK_BOOT,  EE_CLR,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DPI_MOD, S_D_MOD,    S_D_MOD, DPI_MOD, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DPI_MOD,DPI_RMOD,   S_D_RMOD, S_D_MOD, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        XXXXXXX, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,    KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, XXXXXXX, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
